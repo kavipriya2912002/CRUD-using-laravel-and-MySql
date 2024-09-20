@@ -1,0 +1,125 @@
+/* Centered form with reduced width */
+.create-form {
+    background: linear-gradient(135deg, #f9f7d9, #ffb5e8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    max-width: 500px; /* Adjust the max width */
+    width: 100%; 
+    margin: 0 auto;
+}
+
+/* Input field animation */
+.input-animated {
+    border: 2px solid transparent;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input-animated:focus {
+    border-color: #6c63ff;
+    background-color: #f0e5ff;
+    outline: none;
+}
+
+/* Slide-in animation */
+.animate-slide-in {
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Fade-in animation */
+.animate-fade-in {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Bounce animation */
+.animate-bounce {
+    animation: bounce 0.8s ease infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-8px);
+    }
+}
+
+/* Shake animation for Back button */
+.animate-shake {
+    animation: shake 0.5s ease infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Button hover effect */
+.btn-primary {
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+    margin-right: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #8561c5;
+    border-color: #6a56b3;
+}
+
+.btn-secondary {
+    background-color: #ff4757;
+    border-color: #ff4757;
+}
+
+.btn-secondary:hover {
+    background-color: #e84141;
+    border-color: #d63031;
+}
+
+.animated-row {
+    transition: background-color 0.3s ease;
+  }
+.table {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.list-page-background {
+    background: linear-gradient(135deg, #f9f7d9, #ffb5e8);
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  }
+  
+  
